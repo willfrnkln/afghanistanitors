@@ -1,0 +1,17 @@
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      <h1>
+       
+      	<%= link_to "text here maybe?", comic_path(@comic.previous) %>
+      	
+        <%= image_tag "#{params[:id]}.png" %>
+        
+        <%= link_to "text here maybe?", comic_path(@comic.next) %>
+        
+      </h1>
+    </td>
+    <td class="sidebar round">
+    </td>
+  </tr>
+</table>
