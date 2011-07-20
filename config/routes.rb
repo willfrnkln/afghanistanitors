@@ -1,6 +1,6 @@
 Afghanistanitors::Application.routes.draw do
   resources :comics
-
+  resources :users
 
   get "pages/home"
 
@@ -15,13 +15,11 @@ Afghanistanitors::Application.routes.draw do
   match '/home',    :to => 'pages#home'
   match '/upload',  :to => 'upload#uploadfile'
   match '/new',		:to => 'comics#new'
-  
+  match '/signup',  :to => 'users#new'
   
   root :to => 'pages#home'
   
 end
-
-
 
 
 
