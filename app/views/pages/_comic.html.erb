@@ -1,0 +1,19 @@
+		 
+		  <h3><strong><%= if (@comic.nil? && Comic.last)
+       	  		Comic.last.name
+   	  	  	  elsif (@comic)
+       	   	    @comic.name
+   	   	  	  else
+   	   	  	  	"You haven't uploaded anything yet, Will."
+   	   	  	  end
+       	   	  %></strong></h3>
+       	  
+       	   	  
+       	  <%= if (@comic.nil? && Comic.last)
+       	  		image_tag Comic.last.avatar.url #"#{Comic.last.id}.png"
+   	  	  	  elsif (@comic)
+       	   	    image_tag @comic.avatar.url # "#{@comic.id}.png" 
+   	   	  	  else
+   	   	  	  	image_tag "missing.png"
+   	   	  	  end
+       	   	  %>

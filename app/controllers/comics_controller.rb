@@ -14,12 +14,12 @@ def new
 end
 
 def create
-  	@comic = Comic.new(params[:comic]) 
+  	@comic = Comic.new(params[:comic])
   	if @comic.save
-  		flash[:success] = "Welcome to the Sample App!"
+  		flash[:success] = "I don't even know if this shows up, does it? If it does congrats!"
   		redirect_to @comic
   	else
-  		render 'new' 	
+  		render :action => 'new' 	
   	end
   end
 end

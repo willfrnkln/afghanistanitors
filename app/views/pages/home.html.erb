@@ -1,7 +1,11 @@
-<div id="image_box">
-	<%=  image_tag  "#{Comic.last.id}.png" %>
+<div id = "comic_box">
+			
+			<%=  render :partial => "pages/comic" %>
+			<br/>
+			<%=  render :partial => "pages/left_navigation" %>
+			<%=  render :partial => "pages/right_navigation" %>
 </div>
 
-<div id="nav_arrrows">
-	<a >
+<div id="description_box">
+	<%=  render :partial => "pages/description"%>
 </div>

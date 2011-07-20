@@ -1,0 +1,16 @@
+
+<br/>
+<p>
+	<%= link_to (image_tag "me.png"), "/will" %>
+	
+	<%= if (@comic)
+		@comic.description
+	elsif (Comic.last)
+		Comic.last.description
+	else
+		"I'm working on it!"
+	end	
+		
+	%>
+</p>
+<br/>

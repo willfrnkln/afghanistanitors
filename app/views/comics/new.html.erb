@@ -1,9 +1,5 @@
-<%= form_for(@comic) do |f| %>
-  <%= render 'fields', :f => f %>
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
+<%= form_for (@comic) do |f| %>
+	
+  <%= render 'pages/fields', :f => f %>
+  
 <% end %>
-  <div class="field">
-    <%= %>
-  </div>
