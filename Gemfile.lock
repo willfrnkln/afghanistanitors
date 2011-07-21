@@ -77,6 +77,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  paperclip (~> 2.3)
+  paperclip
   rails (= 3.0.9)
   sqlite3

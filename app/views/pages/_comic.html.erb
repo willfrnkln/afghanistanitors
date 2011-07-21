@@ -1,6 +1,6 @@
-		 
-		  <h3><strong><%= if (@comic.nil? && Comic.last)
-       	  		Comic.last.name
+      <h3><strong>
+          <%= if( params[:id].to_i > Comic.last.id)
+               "This comic doesn't exist yet you should be more patient"              
    	  	  	  elsif (@comic)
        	   	    @comic.name
    	   	  	  else
@@ -9,10 +9,10 @@
        	   	  %></strong></h3>
        	  
        	   	  
-       	  <%= if (@comic.nil? && Comic.last)
-       	  		image_tag Comic.last.avatar.url #"#{Comic.last.id}.png"
+       	  <%= if( params[:id].to_i > Comic.last.id)
+                image_tag "does_not_exist.png"                
    	  	  	  elsif (@comic)
-       	   	    image_tag @comic.avatar.url # "#{@comic.id}.png" 
+       	   	    image_tag @comic.avatar.url, :title => @comic.title_text
    	   	  	  else
    	   	  	  	image_tag "missing.png"
    	   	  	  end

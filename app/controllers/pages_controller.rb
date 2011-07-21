@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 	
   def home
+    @comic = Comic.last
   end
 
   def contact

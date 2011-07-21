@@ -1,14 +1,12 @@
 
-	        	<%= if (@comic && @comic.id > 1)
-	      		  link_to (image_tag "back.png"), comic_path(@comic.previous)
-	  			elsif (@comic.nil? && Comic.last) #this is main page text
-	  			  link_to (image_tag "back.png"), comic_path(Comic.find_by_id(Comic.last.id - 1))
-	      		end %>
+	        <%= if( @comic.id > Comic.last.id || @comic.id < Comic.first.id)
+             link_to (image_tag "back.png", :title => "Seriously get back to the present"), comic_path(Comic.last)
+            else
+	      	    link_to (image_tag "back.png", :title => "Back"), comic_path(@comic.previous)
+	      	end %>
 	      	
 
-	      		<%= if (@comic && @comic.id > 1)
-	      		  link_to (image_tag "first.png"), comic_path(Comic.first)
-	  			elsif (@comic.nil? && Comic.last) #this is main page text
-	  			  link_to (image_tag "first.png"), comic_path(Comic.first)
-	      		end %>
+<%= unless (params[:id].to_i == 1)
+	      		  link_to (image_tag "first.png", :title => "Wait lemme start over"), comic_path(Comic.first)
+            end %>
 	  			

@@ -1,13 +1,19 @@
-1310884321
+1311281743
+AddAvatarColumnsToUser	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720142126_add_avatar_columns_to_user.rb	class AddAvatarColumnsToUser 
+AddDescriptionToComics	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110719161138_add_description_to_comics.rb	class AddDescriptionToComics 
+AddEmailUniquenessIndex	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720183913_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
+AddPasswordToUsers	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720211227_add_password_to_users.rb	class AddPasswordToUsers 
+AddSaltToUsers	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110721201921_add_salt_to_users.rb	class AddSaltToUsers 
+AddTitleTextToComics	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110721164811_add_title_text_to_comics.rb	class AddTitleTextToComics 
 Afghanistanitors	C:/Ruby192/rails_projects/afghanistanitors/config/application.rb	module Afghanistanitors
 Application	C:/Ruby192/rails_projects/afghanistanitors/config/application.rb	  class Application 
 ApplicationController	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Ruby192/rails_projects/afghanistanitors/app/helpers/application_helper.rb	module ApplicationHelper
-BinaryObserver	C:/Ruby192/rails_projects/afghanistanitors/app/models/binary_observer.rb	class BinaryObserver 
 Comic	C:/Ruby192/rails_projects/afghanistanitors/app/models/comic.rb	class Comic 
 ComicTest	C:/Ruby192/rails_projects/afghanistanitors/test/unit/comic_test.rb	class ComicTest 
 ComicsController	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/comics_controller.rb	class ComicsController 
 CreateComics	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110708141440_create_comics.rb	class CreateComics 
+CreateUsers	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720180743_create_users.rb	class CreateUsers 
 DataFile	C:/Ruby192/rails_projects/afghanistanitors/app/models/data_file.rb	class DataFile 
 Image	C:/Ruby192/rails_projects/afghanistanitors/app/models/image.rb	class Image 
 ImagesController	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/images_controller.rb	class ImagesController 
@@ -21,6 +27,12 @@ UploadController	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/uplo
 UploadControllerTest	C:/Ruby192/rails_projects/afghanistanitors/test/functional/upload_controller_test.rb	class UploadControllerTest 
 UploadHelper	C:/Ruby192/rails_projects/afghanistanitors/app/helpers/upload_helper.rb	module UploadHelper
 UploadHelperTest	C:/Ruby192/rails_projects/afghanistanitors/test/unit/helpers/upload_helper_test.rb	class UploadHelperTest 
+User	C:/Ruby192/rails_projects/afghanistanitors/app/models/user.rb	class User 
+UserTest	C:/Ruby192/rails_projects/afghanistanitors/test/unit/user_test.rb	class UserTest 
+UsersController	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/users_controller.rb	class UsersController 
+UsersControllerTest	C:/Ruby192/rails_projects/afghanistanitors/test/functional/users_controller_test.rb	class UsersControllerTest 
+UsersHelper	C:/Ruby192/rails_projects/afghanistanitors/app/helpers/users_helper.rb	module UsersHelper
+UsersHelperTest	C:/Ruby192/rails_projects/afghanistanitors/test/unit/helpers/users_helper_test.rb	class UsersHelperTest 
 about	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/pages_controller.rb	  def about
 abs	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function abs()
 absolutize	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function absolutize(element)
@@ -29,7 +41,7 @@ addText	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/controls.j
 all	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function all(iterator, context)
 any	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function argumentNames()
-before_create	C:/Ruby192/rails_projects/afghanistanitors/app/models/binary_observer.rb	   def before_create( model ) 
+authenticate	C:/Ruby192/rails_projects/afghanistanitors/app/models/user.rb	  def self.authenticate(email, submitted_password)
 bind	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function blank()
@@ -63,11 +75,20 @@ dirCheck	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype
 dirNodeCheck	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dispatch	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/effects.js	function dispatch(effect, eventName)
 down	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110708141440_create_comics.rb	  def self.down
+down	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110719161138_add_description_to_comics.rb	  def self.down
+down	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720142126_add_avatar_columns_to_user.rb	  def self.down
+down	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720180743_create_users.rb	  def self.down
+down	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720183913_add_email_uniqueness_index.rb	  def self.down
+down	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720211227_add_password_to_users.rb	  def self.down
+down	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110721164811_add_title_text_to_comics.rb	  def self.down
+down	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110721201921_add_salt_to_users.rb	  def self.down
 each	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function each(iterator)
 each	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
 element	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function element(event)
 empty	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function empty()
+encrypt	C:/Ruby192/rails_projects/afghanistanitors/app/models/user.rb	    def encrypt(string)
+encrypt_password	C:/Ruby192/rails_projects/afghanistanitors/app/models/user.rb	    def encrypt_password
 endsWith	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function endsWith(pattern)
 escapeHTML	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function escapeHTML()
 evalJSON	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function evalJSON(sanitize)
@@ -97,6 +118,7 @@ grep	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	
 gsub	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function gsub(pattern, replacement)
 handleMethod	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/rails.js	function handleMethod(element)
 handleRemote	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/rails.js	function handleRemote(element)
+has_password?	C:/Ruby192/rails_projects/afghanistanitors/app/models/user.rb	  def has_password?(submitted_password)
 home	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/pages_controller.rb	  def home
 inGroupsOf	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function inGroupsOf(number, fillWith)
 include	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function include(object)
@@ -140,6 +162,7 @@ keys	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	
 klass	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function klass()
 last	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function last()
 lastIndexOf	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function lastIndexOf(item, i)
+make_salt	C:/Ruby192/rails_projects/afghanistanitors/app/models/user.rb	    def make_salt
 match	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function match()
 match	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function match(element, selector)
 max	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function max(iterator, context)
@@ -150,12 +173,14 @@ methodize	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototyp
 min	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function min(iterator, context)
 new	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/comics_controller.rb	def new
 new	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/images_controller.rb	  def new
+new	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/users_controller.rb	  def new
 next	C:/Ruby192/rails_projects/afghanistanitors/app/models/comic.rb		def next
 observe	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function observe(element, eventName, handler)
 on	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function on(element, eventName, selector, callback)
 parseColor	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/effects.js	function parseColor(color)
 parseJSON	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function parseJSON()
 partition	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function partition(iterator, context)
+password	C:/Ruby192/rails_projects/afghanistanitors/app/models/user.rb		attr_accessor :password
 pluck	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function pluck(property)
 pointer	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function pointer(event)
 pointerX	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function pointerX(event)
@@ -171,10 +196,12 @@ reverse	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.
 round	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function round()
 save	C:/Ruby192/rails_projects/afghanistanitors/app/models/data_file.rb	  def self.save(upload)
 scan	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function scan(pattern, iterator)
+secure_hash	C:/Ruby192/rails_projects/afghanistanitors/app/models/user.rb	    def secure_hash(string)
 select	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function select()
 select	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function select(selector, scope)
 set	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function set(key, value)
 show	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/comics_controller.rb	def show
+show	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/users_controller.rb	  def show
 size	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function size()
 size	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function size()
 sortBy	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function sortBy(iterator, context)
@@ -215,6 +242,13 @@ unfilterJSON	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/proto
 uniq	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function uniq(sorted)
 unset	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function unset(key)
 up	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110708141440_create_comics.rb	  def self.up
+up	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110719161138_add_description_to_comics.rb	  def self.up
+up	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720142126_add_avatar_columns_to_user.rb	  def self.up
+up	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720180743_create_users.rb	  def self.up
+up	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720183913_add_email_uniqueness_index.rb	  def self.up
+up	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720211227_add_password_to_users.rb	  def self.up
+up	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110721164811_add_title_text_to_comics.rb	  def self.up
+up	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110721201921_add_salt_to_users.rb	  def self.up
 update	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function update(array, args)
 update	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function update(element, content)
 update	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function update(object)

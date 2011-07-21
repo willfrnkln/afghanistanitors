@@ -15,8 +15,7 @@ end
 
 def create
   	@comic = Comic.new(params[:comic])
-  	if @comic.save
-  		flash[:success] = "I don't even know if this shows up, does it? If it does congrats!"
+    if @comic.save
   		redirect_to @comic
   	else
   		render :action => 'new' 	

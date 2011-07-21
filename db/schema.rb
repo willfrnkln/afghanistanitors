@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110720183913) do
+ActiveRecord::Schema.define(:version => 20110721201921) do
 
   create_table "comics", :force => true do |t|
     t.string   "name"
@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(:version => 20110720183913) do
     t.datetime "updated_at"
     t.string   "description"
     t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.string   "title_text"
   end
 
   create_table "users", :force => true do |t|
@@ -25,6 +28,8 @@ ActiveRecord::Schema.define(:version => 20110720183913) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "encrypted_password"
+    t.string   "salt"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
