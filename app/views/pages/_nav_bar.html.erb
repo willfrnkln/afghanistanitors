@@ -2,5 +2,11 @@
 	<li><%= link_to "About", about_path %></li>
 	<li><%= link_to "Contact", contact_path %></li>
 	<li><%= link_to "Add a comic", "/new"%></li>
-  <li><%= link_to "Sign up", "/signup"%></li>
+  <% if signed_in? %>
+      <li><%= link_to "Profile", current_user %></li>
+      <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to "Sign up", "/signup"%></li>
+      <li><%= link_to "Sign in", signin_path %></li>
+     <% end %>
 </ul>

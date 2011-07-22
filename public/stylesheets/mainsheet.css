@@ -15,14 +15,22 @@ body {
   margin-right: 50px;
 }
 
-#comic_box{
+#centered {
+  background: #888;
+  padding: 5px;
+}
+#comic_box {
 	text-align: center;
-  min-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1400px;
+  max-width:1450px;
 }
 
 #description_box {
 	margin-top: 50px;
 	margin-right: 50%;
+  min-width: 500px;
 }
 
 #description_box p {
@@ -97,6 +105,9 @@ li {
 	border-top-left-radius: 0px;
 }
 
+#profile_box {
+  padding: 10px;
+}
 
 #title_block {
 	
