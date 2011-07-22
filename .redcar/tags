@@ -1,4 +1,4 @@
-1311281743
+1311343604
 AddAvatarColumnsToUser	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720142126_add_avatar_columns_to_user.rb	class AddAvatarColumnsToUser 
 AddDescriptionToComics	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110719161138_add_description_to_comics.rb	class AddDescriptionToComics 
 AddEmailUniquenessIndex	C:/Ruby192/rails_projects/afghanistanitors/db/migrate/20110720183913_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
@@ -61,6 +61,7 @@ contact	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/pages_control
 copy	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
 create	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/comics_controller.rb	def create
 create	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/images_controller.rb	  def create
+create	C:/Ruby192/rails_projects/afghanistanitors/app/controllers/users_controller.rb	  def create
 create	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function create()
 cssNameFor	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	C:/Ruby192/rails_projects/afghanistanitors/public/javascripts/prototype.js	function cumulativeOffset(element)
