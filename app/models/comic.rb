@@ -14,7 +14,7 @@ class Comic < ActiveRecord::Base
 	end
 
 	def next
-  	  Comic.find_by_id(id + 1, :select => 'id')
+    Comic.find_by_id(id + 1, :select => 'id')
 	end
 
 	

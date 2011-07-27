@@ -1,11 +1,17 @@
-<div id = "centered"><div id = "comic_box">
+<div id = "centered">
+  <div id = "comic_box">
 			
-			<%=  render :partial => "pages/comic" %>
+			<%=  render :partial => "pages/home_page_comic" %>
 			<br/>
-			<%=  render :partial => "pages/left_navigation" %>
+			<%=  render :partial => "pages/home_left_navigation" %>
 			<%=  render :partial => "pages/right_navigation" %>
-</div></div>
-
-<div id="description_box">
-	<%=  render :partial => "pages/description"%>
+  </div>
+  <%= Comic.last.name %>
 </div>
+
+  <div id= "comment_box">
+    <%= render :partial => "pages/comments" %>
+  </div>
+  <div id= "description_box">
+	  <%=  render :partial => "pages/description"%>
+  </div>

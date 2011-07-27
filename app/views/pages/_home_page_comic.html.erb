@@ -1,6 +1,6 @@
 <br/>
 
-<%= if( Comic.last.nil? || params[:id].to_i > Comic.last.id || params[:id].to_i < Comic.first.id)
+<%= if( Comic.last.nil? )
         image_tag "does_not_exist.png"                
     elsif (@comic)
        	image_tag @comic.avatar.url, :title => @comic.title_text
@@ -11,7 +11,7 @@
 
 <br/>
 
-<%= if( Comic.last.nil? || params[:id].to_i > Comic.last.id || params[:id].to_i < Comic.first.id)
+<%= if( Comic.last.nil? )
                "This comic doesn't exist yet you should be more patient"              
 	  elsif (@comic)
        	   	    @comic.name
@@ -19,6 +19,7 @@
 	  	"You haven't uploaded anything yet, Will."
 	  end
 %>
-<% if signed_in? %>
+
+<% if signed_in? && current_user.admin? %>
     <li><%= link_to "Edit Comic", edit_comic_path(@comic) %></li>
 <% end %>

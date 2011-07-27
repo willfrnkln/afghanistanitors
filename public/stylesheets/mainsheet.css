@@ -11,30 +11,64 @@
 body {
   font: Helvetica;
   background: #333;
-  margin-left: 50px;
-  margin-right: 50px;
+  text-align: center;
 }
 
 #centered {
   background: #888;
   padding: 5px;
+  min-width: 1300px;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
 }
+
 #comic_box {
 	text-align: center;
   margin-left: auto;
   margin-right: auto;
-  min-width: 1400px;
-  max-width:1450px;
+  min-width: 1300px;
+  font-size: 50%;
+}
+
+#comment_box {
+  background: #888;
+  
+	margin-left: 5%;
+  -moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+  max-width: 500px;
+}
+
+#comment_box p {
+  background: #888;
+  text-align: left;
+  margin-right: 50px;
+ margin-right: 5%;
+  float: left;
 }
 
 #description_box {
-	margin-top: 50px;
-	margin-right: 50%;
+  background: #888;
+  margin-left:200px;
+	margin-right: 5%;
   min-width: 500px;
+  -moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+  float: right;
 }
 
 #description_box p {
-	margin-left: 50px;
+  text-align: left;
+	margin-left: 15px;
 	margin-right: 50px;
 }
 
@@ -47,20 +81,30 @@ div {
 	font-size: 200%;
 }
 
+#edit {
+  margin-right: 40%;
+  margin-left: 40%;
+  min-width: 200px;
+}
+
 .field {
-	display:inline-block;
+	text-align: left;
+  margin-right:35%;
+  margin-left:35%;
+  min-width: 250px;
 }
 
 .field p{
+  padding: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 
 h3 {
-	font-size: 120;
+	font-size: 20;
 }
 h6 {
-	font-size: 800%;
+	font-size: 600%;
 }
 
 header {

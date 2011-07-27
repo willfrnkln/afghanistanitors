@@ -5,7 +5,9 @@
 	
 	<%= if (@comic)
 		@comic.description
-	elsif (params[:id].to_i > Comic.last.id)
+	elsif (Comic.last.nil?)
+    "Move along"
+  elsif(params[:id].to_i > Comic.last.id)
     "You should be ashamed how did you even get here?"
   elsif(Comic.last)
 		Comic.last.description

@@ -1,3 +1,3 @@
-<%= if (@comic.id != Comic.last.id) 
+<%= if( @comic && @comic.id != Comic.last.id) 
 	        	  link_to (image_tag "forward.png"), comic_path(@comic.next)
 	        	end %>

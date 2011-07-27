@@ -1,0 +1,7 @@
+<% unless( Comic.last.nil? )%>
+  <%= link_to (image_tag "back.png", :title => "Back"), comic_path(Comic.last.previous)%>	      	
+
+<%= if(params[:id].to_i != 1)
+	      		  link_to (image_tag "first.png", :title => "Wait lemme start all over"), comic_path(Comic.first)
+    end %>
+<% end %>
